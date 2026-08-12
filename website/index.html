@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Old Money Picks — Quiet Luxury Curated</title>
+    <meta name="description" content="Curated selection of timeless essentials. Quiet luxury watches, leather goods, scents, fashion, and elegant living.">
+    
+    <!-- Pinterest Domain Verification -->
+    <meta name="pinterest" content="4222d665a2f8479c625d500e6e5b302e">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="The Old Money Picks">
+    <meta property="og:description" content="Your guide to quiet luxury. Timeless essentials curated for the modern gentleman.">
+    <meta property="og:url" content="https://oldmoneypicks.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "The Old Money Picks",
+        "description": "Curated quiet luxury essentials",
+        "url": "https://oldmoneypicks.com",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": []
+        }
+    }
+    </script>
+
+    <!-- Google Analytics — PASTE YOUR G-5MXY6JHJLC BELOW -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MXY6JHJLC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5MXY6JHJLC');
+    </script>
+    <!-- END GOOGLE ANALYTICS -->
+
+    <!-- Pinterest Save Button -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+    <style>
+        :root {
+            --bg-primary: #0d0d0d;
+            --bg-card: #141414;
+            --border: #262626;
+            --gold: #d4af37;
+            --gold-light: #e6c757;
+            --text-primary: #f2f2f2;
+            --text-secondary: #a6a6a6;
+            --text-muted: #808080;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============ NAVIGATION BAR ============ */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(13, 13, 13, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .nav-bar::-webkit-scrollbar {
+            height: 2px;
+        }
+        .nav-bar::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 2px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            flex-shrink: 0;
+        }
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            border-bottom: 1px solid var(--border);
+        }
+        .hero h1 {
+            color: var(--gold);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+        .hero .subtitle {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+        .hero .badge {
+            display: inline-block;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ============ SECTION HEADER ============ */
+        .section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 60px;
+        }
+        .section-header .emoji {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .section-header h2 {
+            color: var(--gold-light);
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+        .section-header .divider {
+            width: 40px;
+            height: 1px;
+            background-color: var(--gold);
+            margin: 15px auto;
+        }
+        .section-header p {
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        /* ============ PRODUCT GRID ============ */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 18px;
+            border: 1px solid var(--border);
+            background-color: var(--bg-card);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: transparent;
+            transition: background-color 0.35s ease;
+        }
+        .product-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.08);
+        }
+        .product-card:hover::before {
+            background-color: var(--gold);
+        }
+        .product-image {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            border-radius: 2px;
+            object-fit: contain;
+            background-color: #1a1a1a;
+        }
+        .product-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .product-info h3 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        .product-info .category {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .product-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .btn-shop {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 7px 18px;
+            font-family: 'Georgia', serif;
+            font-size: 0.8rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        .btn-shop:hover {
+            background-color: var(--gold);
+            color: var(--bg-primary);
+        }
+        .btn-save {
+            display: inline-block;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        .btn-save:hover {
+            opacity: 1;
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        .footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
+        .footer .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .footer .social-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+        .footer .social-links a:hover {
+            color: var(--gold);
+        }
+        .footer .disclaimer {
+            max-width: 600px;
+            margin: 20px auto 0;
+            font-size: 0.75rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* ============ BACK TO TOP ============ */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            background-color: var(--bg-card);
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .back-to-top:hover {
+            background-color: var(--gold);
+            color: var(--bg-primary);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .product-image {
+                width: 140px;
+                height: 140px;
+            }
+            .product-actions {
+                justify-content: center;
+            }
+            .nav-links {
+                gap: 16px;
+            }
+            .nav-links a {
+                font-size: 0.75rem;
+            }
+            .hero {
+                padding: 50px 20px 40px;
+            }
+            .section {
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="#timeless-watches">⌚ Watches</a>
+            <a href="#quiet-luxury-leather">👜 Leather</a>
+            <a href="#signature-scents">🌿 Scents</a>
+            <a href="#quiet-luxury-fashion">👔 Fashion</a>
+            <a href="#elegant-living">🏛️ Living</a>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+        <h1>THE OLD MONEY PICKS</h1>
+        <p class="subtitle">Your guide to quiet luxury. Curated selections of timeless essentials for the modern gentleman.</p>
+        <span class="badge">✦ Curated Collection ✦</span>
+    </header>
+
+    <!-- ============ ⌚ TIMELESS WATCHES ============ -->
+    <section class="section" id="timeless-watches">
+        <div class="section-header">
+            <span class="emoji">⌚</span>
+            <h2>Timeless Watches</h2>
+            <div class="divider"></div>
+            <p>Understated elegance for your wrist</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61xjD+DW2HL._AC_SY695_.jpg" alt="Seiko 5 SNXS79" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Seiko 5 SNXS79 — The Understated Classic</h3>
+                    <p class="category">⌚ Timeless Watches</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wgMGJD" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Seiko 5 SNXS79'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23timeless-watches&media=https://m.media-amazon.com/images/I/61xjD+DW2HL._AC_SY695_.jpg&description=Seiko%205%20SNXS79%20-%20The%20Understated%20Classic" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71SbtT+yVmL._AC_SY695_.jpg" alt="Casio A168WG-9" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Casio A168WG-9 — Retro Gold Digital</h3>
+                    <p class="category">⌚ Timeless Watches</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4x5jxT1" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Casio A168WG-9'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23timeless-watches&media=https://m.media-amazon.com/images/I/71SbtT+yVmL._AC_SY695_.jpg&description=Casio%20A168WG-9%20-%20Retro%20Gold%20Digital" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71UhTU3di0L._AC_SY695_.jpg" alt="Timex Marlin" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Timex Marlin — Mid-Century Hand-Wound</h3>
+                    <p class="category">⌚ Timeless Watches</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wQIh19" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Timex Marlin'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23timeless-watches&media=https://m.media-amazon.com/images/I/71UhTU3di0L._AC_SY695_.jpg&description=Timex%20Marlin%20-%20Mid-Century%20Hand-Wound" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/818OZ6TQzCL._AC_SX679_.jpg" alt="Tissot PRX Powermatic 80" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Tissot PRX Powermatic 80 — Ice Blue</h3>
+                    <p class="category">⌚ Timeless Watches</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4q9Q1ch" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Tissot PRX'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23timeless-watches&media=https://m.media-amazon.com/images/I/818OZ6TQzCL._AC_SX679_.jpg&description=Tissot%20PRX%20Powermatic%2080%20-%20Ice%20Blue" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81KXfBSX0HL._AC_SY879_.jpg" alt="Orient Bambino" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Orient Bambino Small Seconds — Champagne</h3>
+                    <p class="category">⌚ Timeless Watches</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/3S3YXmQ" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Orient Bambino'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23timeless-watches&media=https://m.media-amazon.com/images/I/81KXfBSX0HL._AC_SY879_.jpg&description=Orient%20Bambino%20Small%20Seconds%20-%20Champagne" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 👜 QUIET LUXURY LEATHER ============ -->
+    <section class="section" id="quiet-luxury-leather">
+        <div class="section-header">
+            <span class="emoji">👜</span>
+            <h2>Quiet Luxury Leather</h2>
+            <div class="divider"></div>
+            <p>Refined leather goods that whisper, not shout</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/91fdgL6n%2B0L._AC_SX679_.jpg" alt="Coach Pebbled Leather Card Holder" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Coach Pebbled Leather Card Holder</h3>
+                    <p class="category">👜 Quiet Luxury Leather</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/3SoZwHY" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Coach Card Holder'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-leather&media=https://m.media-amazon.com/images/I/91fdgL6n%2B0L._AC_SX679_.jpg&description=Coach%20Pebbled%20Leather%20Card%20Holder" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61ZShj7MUJL._AC_SX679_.jpg" alt="Fossil Minimalist Slim Wallet" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Fossil Minimalist Slim Wallet</h3>
+                    <p class="category">👜 Quiet Luxury Leather</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4g2FJY5" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Fossil Wallet'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-leather&media=https://m.media-amazon.com/images/I/61ZShj7MUJL._AC_SX679_.jpg&description=Fossil%20Minimalist%20Slim%20Wallet" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51eZtWkYpiL._AC_SX679_.jpg" alt="Leatherology Leather Desk Pad" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Leatherology Leather Desk Pad</h3>
+                    <p class="category">👜 Quiet Luxury Leather</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4g8VTOn" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Leatherology Desk Pad'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-leather&media=https://m.media-amazon.com/images/I/51eZtWkYpiL._AC_SX679_.jpg&description=Leatherology%20Leather%20Desk%20Pad" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81oEFzLJmzL._AC_SY879_.jpg" alt="Hide & Drink Leather Watch Roll" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Hide & Drink Leather Watch Roll</h3>
+                    <p class="category">👜 Quiet Luxury Leather</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4g5ijQf" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Hide and Drink Watch Roll'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-leather&media=https://m.media-amazon.com/images/I/81oEFzLJmzL._AC_SY879_.jpg&description=Hide%20%26%20Drink%20Leather%20Watch%20Roll" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71zVVSJM%2B1L._AC_SX679_.jpg" alt="Royce Leather Valet Tray" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Royce Leather Valet Tray</h3>
+                    <p class="category">👜 Quiet Luxury Leather</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wjhcCV" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Royce Valet Tray'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-leather&media=https://m.media-amazon.com/images/I/71zVVSJM%2B1L._AC_SX679_.jpg&description=Royce%20Leather%20Valet%20Tray" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 🌿 SIGNATURE SCENTS ============ -->
+    <section class="section" id="signature-scents">
+        <div class="section-header">
+            <span class="emoji">🌿</span>
+            <h2>Signature Scents</h2>
+            <div class="divider"></div>
+            <p>Fragrances that leave a lasting impression</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61Rd2KjRGEL._SL1500_.jpg" alt="Nautica Voyage" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Nautica Voyage Eau de Toilette</h3>
+                    <p class="category">🌿 Signature Scents</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wsaY3n" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Nautica Voyage'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23signature-scents&media=https://m.media-amazon.com/images/I/61Rd2KjRGEL._SL1500_.jpg&description=Nautica%20Voyage%20Eau%20de%20Toilette" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71LPg97OxyL._SX679_.jpg" alt="CK One" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>CK One — Unisex Classic</h3>
+                    <p class="category">🌿 Signature Scents</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4g24BxB" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'CK One'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23signature-scents&media=https://m.media-amazon.com/images/I/71LPg97OxyL._SX679_.jpg&description=CK%20One%20-%20Unisex%20Classic" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51gWkHSwhmL._SL1500_.jpg" alt="Dior Sauvage" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Dior Sauvage Eau de Toilette</h3>
+                    <p class="category">🌿 Signature Scents</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4bIkXKB" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Dior Sauvage'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23signature-scents&media=https://m.media-amazon.com/images/I/51gWkHSwhmL._SL1500_.jpg&description=Dior%20Sauvage%20Eau%20de%20Toilette" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/710HXzbWPKL._SL1500_.jpg" alt="Creed Aventus" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Creed Aventus — Sample Vial</h3>
+                    <p class="category">🌿 Signature Scents</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4fQJdN8" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Creed Aventus'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23signature-scents&media=https://m.media-amazon.com/images/I/710HXzbWPKL._SL1500_.jpg&description=Creed%20Aventus%20-%20Sample%20Vial" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51wzXyrFzDL._SL1000_.jpg" alt="Jo Malone Wood Sage" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Jo Malone Wood Sage & Sea Salt</h3>
+                    <p class="category">🌿 Signature Scents</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wr6AC2" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Jo Malone Wood Sage'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23signature-scents&media=https://m.media-amazon.com/images/I/51wzXyrFzDL._SL1000_.jpg&description=Jo%20Malone%20Wood%20Sage%20%26%20Sea%20Salt" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 👔 QUIET LUXURY FASHION ============ -->
+    <section class="section" id="quiet-luxury-fashion">
+        <div class="section-header">
+            <span class="emoji">👔</span>
+            <h2>Quiet Luxury Fashion</h2>
+            <div class="divider"></div>
+            <p>Effortless elegance for the modern wardrobe</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51Y4VWbghCL._AC_SX679_.jpg" alt="Polo Ralph Lauren Oxford" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Polo Ralph Lauren Oxford Shirt — White</h3>
+                    <p class="category">👔 Quiet Luxury Fashion</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4fTWRPF" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Polo RL Oxford'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-fashion&media=https://m.media-amazon.com/images/I/51Y4VWbghCL._AC_SX679_.jpg&description=Polo%20Ralph%20Lauren%20Oxford%20Shirt%20White" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/9136C3zC1DL._AC_SY879_.jpg" alt="Brooks Brothers Non Iron" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Brooks Brothers Non-Iron Slim Fit</h3>
+                    <p class="category">👔 Quiet Luxury Fashion</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wskP9E" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Brooks Brothers'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-fashion&media=https://m.media-amazon.com/images/I/9136C3zC1DL._AC_SY879_.jpg&description=Brooks%20Brothers%20Non-Iron%20Slim%20Fit" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61ACX1z7wRL._AC_SX679_.jpg" alt="Linen Shirt Cream" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Linen Shirt — Cream</h3>
+                    <p class="category">👔 Quiet Luxury Fashion</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wscRNv" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Linen Shirt Cream'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-fashion&media=https://m.media-amazon.com/images/I/61ACX1z7wRL._AC_SX679_.jpg&description=Linen%20Shirt%20-%20Cream" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61KymiXdjqL._AC_SY879_.jpg" alt="Cashmere V-Neck Navy" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Cashmere V-Neck Sweater — Navy</h3>
+                    <p class="category">👔 Quiet Luxury Fashion</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4gaV8Es" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Cashmere V-Neck Navy'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-fashion&media=https://m.media-amazon.com/images/I/61KymiXdjqL._AC_SY879_.jpg&description=Cashmere%20V-Neck%20Sweater%20-%20Navy" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81fZI9x1LsL._AC_SX679_.jpg" alt="Uniqlo Linen Blazer" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Uniqlo Linen Blazer — Beige</h3>
+                    <p class="category">👔 Quiet Luxury Fashion</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wqsYeH" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Uniqlo Linen Blazer'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23quiet-luxury-fashion&media=https://m.media-amazon.com/images/I/81fZI9x1LsL._AC_SX679_.jpg&description=Uniqlo%20Linen%20Blazer%20-%20Beige" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 🏛️ ELEGANT LIVING ============ -->
+    <section class="section" id="elegant-living">
+        <div class="section-header">
+            <span class="emoji">🏛️</span>
+            <h2>Elegant Living</h2>
+            <div class="divider"></div>
+            <p>Curated accents for a refined home</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61cI1xKl+8L._SL1500_.jpg" alt="LAFCO Candle" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>LAFCO Chamomile Lavender Candle</h3>
+                    <p class="category">🏛️ Elegant Living</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4z4KIia" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'LAFCO Candle'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23elegant-living&media=https://m.media-amazon.com/images/I/61cI1xKl+8L._SL1500_.jpg&description=LAFCO%20Chamomile%20Lavender%20Candle" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71OdTNrEc0S._AC_SL1500_.jpg" alt="Waterford Lismore Tumbler" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Waterford Lismore Crystal Tumbler</h3>
+                    <p class="category">🏛️ Elegant Living</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4wlp5aU" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Waterford Tumbler'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23elegant-living&media=https://m.media-amazon.com/images/I/71OdTNrEc0S._AC_SL1500_.jpg&description=Waterford%20Lismore%20Crystal%20Tumbler" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61MpC6iirbL._AC_SX679_.jpg" alt="Marble Brass Bookends" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Marble & Brass Bookends</h3>
+                    <p class="category">🏛️ Elegant Living</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4z9Gw0N" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Marble Bookends'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23elegant-living&media=https://m.media-amazon.com/images/I/61MpC6iirbL._AC_SX679_.jpg&description=Marble%20%26%20Brass%20Bookends" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/711TnS4V3iL._AC_SL1500_.jpg" alt="Ralph Lauren Throw" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Ralph Lauren Cashmere Throw Blanket</h3>
+                    <p class="category">🏛️ Elegant Living</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4ciAAsl" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'RL Throw Blanket'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23elegant-living&media=https://m.media-amazon.com/images/I/711TnS4V3iL._AC_SL1500_.jpg&description=Ralph%20Lauren%20Cashmere%20Throw%20Blanket" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51lctPHekrL._AC_SL1500_.jpg" alt="Diptyque Baies" class="product-image" loading="lazy" onerror="this.style.display='none'">
+                <div class="product-info">
+                    <h3>Diptyque Baies Scented Oval</h3>
+                    <p class="category">🏛️ Elegant Living</p>
+                    <div class="product-actions">
+                        <a href="https://amzn.to/4i1qmQL" target="_blank" rel="nofollow sponsored" class="btn-shop" onclick="gtag('event','click',{'event_category':'affiliate','event_label':'Diptyque Baies'});">Shop Now</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=https://oldmoneypicks.com%23elegant-living&media=https://m.media-amazon.com/images/I/51lctPHekrL._AC_SL1500_.jpg&description=Diptyque%20Baies%20Scented%20Oval" target="_blank" class="btn-save" title="Save to Pinterest"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'/%3E%3C/svg%3E" alt="Save"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p style="color: var(--gold); font-size: 1.2rem; letter-spacing: 2px;">THE OLD MONEY PICKS</p>
+        <p>Curated quiet luxury. Timeless essentials for the modern gentleman.</p>
+        <div class="social-links">
+            <a href="https://pinterest.com/theoldmoneypicks" target="_blank">Pinterest</a>
+            <a href="https://tiktok.com/@theoldmoneypicks" target="_blank">TikTok</a>
+            <a href="https://instagram.com/theoldmoneypicks_" target="_blank">Instagram</a>
+        </div>
+        <p class="disclaimer">
+            As an Amazon Associate, we earn from qualifying purchases. The Old Money Picks is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. All product recommendations are independently curated. Prices and availability are subject to change.
+        </p>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+    <script>
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Track Pinterest Save clicks
+        document.querySelectorAll('.btn-save').forEach(btn => {
+            btn.addEventListener('click', function() {
+                gtag('event', 'pinterest_save', {
+                    'event_category': 'social',
+                    'event_label': this.closest('.product-card').querySelector('h3').textContent.trim()
+                });
+            });
+        });
+
+        // Image error handler already inline (onerror)
+    </script>
+
+</body>
+</html>
