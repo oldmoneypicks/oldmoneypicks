@@ -5,4 +5,15 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://oldmoneypicks.com/blog/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://oldmoneypicks.com/blog/quiet-luxury-watches-that-look-expensive/</loc>
+        <lastmod>2026-08-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 </urlset>
