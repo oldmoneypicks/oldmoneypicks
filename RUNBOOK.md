@@ -48,7 +48,7 @@ Saya sudah membuatkan fondasinya. Yang tersisa hanya di-deploy.
 | File | Isi |
 |---|---|
 | `website/blog/index.html` | Halaman index "The Journal" |
-| `website/blog/quiet-luxury-watches-under-500/index.html` | Artikel 800 kata, 5 produk jam tangan, 5 link afiliasi asli Anda |
+| `website/blog/quiet-luxury-watches-that-look-expensive/index.html` | Artikel 800 kata, 5 produk jam tangan, 5 link afiliasi asli Anda |
 | `website/index.html` | Nav bar ditambah link ✒️ Journal |
 | `website/sitemap.xml` | Ditambah 2 URL baru |
 | `data/pins-blog-batch-01.csv` | 5 naskah pin Pinterest siap posting |
@@ -81,7 +81,7 @@ Vercel akan deploy sendiri dalam ~30 detik. Cek di
 
 **Terakhir, daftarkan ke Google:**
 Buka Google Search Console → URL Inspection → tempel
-`https://oldmoneypicks.com/blog/quiet-luxury-watches-under-500/` →
+`https://oldmoneypicks.com/blog/quiet-luxury-watches-that-look-expensive/` →
 "Request Indexing". Ini mempercepat indexing dari berminggu-minggu jadi
 beberapa hari.
 
