@@ -1,5 +1,7 @@
 # RUNBOOK — Mengelola Klinik + OldMoneyPicks + YouTube
 
+⏰ 14 SEP — putuskan InVideo. 15 SEP — batalkan kalau tidak dipakai lagi ($20/bulan, tagihan 16 Sep).
+
 Terakhir diperbarui: 30 Agustus 2026
 
 ---
