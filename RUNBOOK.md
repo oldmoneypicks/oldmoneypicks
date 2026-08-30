@@ -1,6 +1,6 @@
 # RUNBOOK — Mengelola Klinik + OldMoneyPicks + YouTube
 
-Terakhir diperbarui: 27 Agustus 2026
+Terakhir diperbarui: 30 Agustus 2026
 
 ---
 
@@ -48,10 +48,10 @@ Saya sudah membuatkan fondasinya. Yang tersisa hanya di-deploy.
 | File | Isi |
 |---|---|
 | `website/blog/index.html` | Halaman index "The Journal" |
-| `website/blog/quiet-luxury-watches-that-look-expensive/index.html` | Artikel 800 kata, 5 produk jam tangan, 5 link afiliasi asli Anda |
+| `website/blog/quiet-luxury-watches-that-look-expensive/index.html` | Artikel 800 kata, 4 produk jam tangan, 4 link afiliasi asli Anda |
 | `website/index.html` | Nav bar ditambah link ✒️ Journal |
 | `website/sitemap.xml` | Ditambah 2 URL baru |
-| `data/pins-blog-batch-01.csv` | 5 naskah pin Pinterest siap posting |
+| `data/pins-blog-batch-01.csv` | 4 naskah pin Pinterest siap posting |
 
 **Cek dulu di laptop:**
 
@@ -61,7 +61,10 @@ python3 -m http.server 8080
 ```
 
 Buka `http://localhost:8080/blog/` di browser. Pastikan gambar muncul dan
-tombol "Shop Now" mengarah ke `amzn.to/...`. Tekan Ctrl+C untuk berhenti.
+tombol "Shop Now" mengarah ke `amazon.com/dp/...?tag=oldmoneypicks-20`.
+Tag `oldmoneypicks-20` itulah yang membawa komisi — bukan bentuk `amzn.to/...`
+yang disebut versi lama runbook ini. Keduanya sah, situs Anda memakai URL penuh.
+Tekan Ctrl+C untuk berhenti.
 
 **Kalau sudah cocok, deploy:**
 
@@ -89,7 +92,7 @@ beberapa hari.
 
 ## 2. HARI INI — 15 menit: posting Pinterest
 
-Naskah 5 pin sudah siap di `data/pins-blog-batch-01.csv`. Semua mengarah ke
+Naskah 4 pin sudah siap di `data/pins-blog-batch-01.csv`. Semua mengarah ke
 artikel baru, bukan ke homepage — ini penting, karena Pinterest memberi
 jangkauan lebih besar ke link yang halamannya berisi konten, bukan sekadar
 daftar produk.
@@ -99,7 +102,7 @@ Buka Pinterest → Create Pin → upload gambar dari
 `website/images/products/` → copy-paste judul dan deskripsi dari CSV →
 tempel Destination Link → Schedule.
 
-Jadwalkan **1 pin per hari selama 5 hari**, jangan 5 sekaligus. Pinterest
+Jadwalkan **1 pin per hari selama 4 hari**, jangan 4 sekaligus. Pinterest
 menghukum posting yang menumpuk.
 
 **Kalau mau otomatis:** token Pinterest Anda sudah ada. Bilang ke saya
@@ -194,8 +197,8 @@ Klik tanpa order = produk salah pilih.
 Baru setelah klik naik konsisten, mulai perhatikan konversi.
 
 Target realistis: 10 artikel dan 100 pin sebelum berharap pendapatan berarti.
-Anda baru di artikel 1 dan pin 5. Itu normal — yang penting jangan berhenti
-di angka 3.
+Anda baru di artikel 1 dan pin 0 terposting (4 naskah siap, belum ada yang
+terbit). Itu normal — yang penting jangan berhenti di angka 3.
 
 ---
 
