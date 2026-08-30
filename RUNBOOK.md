@@ -2,7 +2,7 @@
 
 ⏰ 14 SEP — putuskan InVideo. 15 SEP — batalkan kalau tidak dipakai lagi ($20/bulan, tagihan 16 Sep).
 
-Terakhir diperbarui: 30 Agustus 2026
+Terakhir diperbarui: 31 Agustus 2026
 
 ---
 
@@ -113,7 +113,20 @@ resmi, bukan browser automation, jadi tidak ada risiko akun kena blokir.
 
 ---
 
-## 3. AKHIR PEKAN — 30 menit: siapkan Grok Bot dengan aman
+## 3. ~~AKHIR PEKAN — siapkan Grok Bot~~ — DITANGGUHKAN
+
+> ⏸️ **Ditangguhkan 31 Agustus 2026.** Grok Bot ternyata **tidak punya tier
+> gratis**; SuperGrok $30/bulan tidak termasuk, dan paket termurah yang memuatnya
+> adalah SuperGrok Plus **$100/bulan**. Ditinjau ulang bersama keputusan InVideo
+> tanggal **14 September**, tidak sebelumnya. Karena itu Sabtu tidak lagi berisi
+> tugas Grok Bot di ritme mingguan (bagian 5).
+>
+> Risiko tambahan yang membuatnya tidak layak dikejar: Grok Bot masuk dengan
+> kredensial pemilik, dan itu melanggar ToS Amazon Associates — akunnya bisa
+> ditutup tanpa peringatan.
+>
+> Isi di bawah ini tetap disimpan karena langkah tokennya tetap benar kalau
+> suatu saat dipakai. **Jangan dikerjakan sekarang.**
 
 Lakukan **berurutan**. Jangan lompat ke langkah 3c sebelum 3a dan 3b selesai.
 
@@ -176,16 +189,30 @@ pengetikan berulang, dan pasien tetap dibalas dalam hitungan detik.
 
 ## 5. Ritme mingguan
 
+> Diperbaiki 31 Agustus 2026. Versi lama menempatkan pekerjaan affiliate di
+> **Sabtu pagi dan siang** — itu keliru: **klinik buka Senin–SABTU, 09.00–19.00.**
+> Sabtu bukan hari kosong. Satu-satunya waktu luang yang benar-benar ada adalah
+> **malam sesudah pukul 19.00 dan sepanjang hari Minggu.**
+
 | Waktu | Fokus | Durasi |
 |---|---|---|
-| Senin–Jumat, jam kerja | Klinik. HP di mode Balasan Cepat. Nol urusan affiliate. | — |
-| Selasa & Kamis malam | Jadwalkan pin Pinterest untuk 3 hari ke depan | 15 mnt |
-| Sabtu pagi | Jalankan Prompt A di Grok Bot, review draft artikel | 45 mnt |
-| Sabtu siang | Edit draft jadi HTML, `git push` | 45 mnt |
+| Senin–Sabtu, 09.00–19.00 | Klinik. HP di mode Balasan Cepat. Nol urusan affiliate. | — |
+| Selasa & Kamis, sesudah 19.00 | Jadwalkan pin Pinterest untuk 3 hari ke depan | 15 mnt |
+| Sabtu, sesudah 19.00 | Tulis atau perbaiki draf artikel | 45 mnt |
+| Minggu pagi | Jadikan HTML, `git push`, minta indexing di Search Console | 45 mnt |
 | Minggu malam | Cek Analytics + Amazon. Catat 1 angka: klik afiliasi minggu ini. | 15 mnt |
 
 Total di luar jam klinik: **sekitar 2 jam per minggu.** Kalau lebih dari itu,
 ada yang salah dengan alurnya — bukan dengan Anda.
+
+**Kenapa Minggu pagi, bukan Sabtu malam, untuk `git push`:** mengedit HTML dan
+push sesudah 10 jam berdiri di klinik adalah cara paling gampang membuat
+kesalahan yang mahal — misalnya `git add .` yang menyeret berkas `.env`.
+Menulis draf boleh dalam keadaan lelah; menyentuh repo sebaiknya tidak.
+
+**Minggu adalah satu-satunya hari penuh.** Jangan dijejali. Kalau sedang ada
+proyek video berjalan, blok editingnya juga jatuh di hari yang sama — itu
+sudah 2–3 jam sendiri. Pilih salah satu per minggu, jangan keduanya.
 
 ---
 
