@@ -75,3 +75,43 @@ dengan judulnya sendiri — contoh paling nyata: `marble-brass-bookends.jpg` men
 sepasang bookend batu krem **tanpa kuningan sama sekali**, dan `fossil-slim-wallet.jpg`
 adalah dompet cokelat tanpa merek Fossil. Ini isu terpisah dari link, tapi risikonya
 mirip: pengunjung mengklik karena foto, lalu mendarat di barang yang berbeda.
+
+---
+
+# CSV untuk Google Sheets Make.com — 1 September 2026
+
+Tiga berkas dibuat dari `data/produk.csv` yang sudah diperbaiki. Pilih **satu** sesuai
+cara Bapak memperbarui Sheet:
+
+| Berkas | Isi | Dipakai kalau |
+|---|---|---|
+| `sheet-make-link-baru.csv` | 2 kolom: Pin Title + link baru, 25 baris | Mau menimpa **kolom link saja**, kolom lain tidak disentuh |
+| `sheet-make-siap-pakai.csv` | 4 kolom, **21 baris** — hanya yang linknya sudah benar | Mau mengganti isi Sheet dan membuang baris bermasalah |
+| `sheet-make-lengkap.csv` | 4 kolom, 25 baris apa adanya | Mau salinan persis `produk.csv` |
+
+## ⚠️ Tiga hal yang harus diperiksa sebelum menempel
+
+**1. Kolom "Last Posted" akan hilang kalau seluruh Sheet ditimpa.**
+Rotasi produk bergantung pada kolom itu (sort ascending, limit 1). Kalau seluruh isi
+Sheet diganti, semua nilai Last Posted kosong dan rotasi mengulang dari awal — beberapa
+produk bisa diposting dua kali berturut-turut. **Cara paling aman: tempel hanya kolom
+link.**
+
+**2. Dior Sauvage dan Creed Aventus masih membawa link afiliasi hidup di Sheet.**
+Dua produk ini **sudah dicabut dari situs** (kartunya tanpa tombol), tapi barisnya masih
+ada di `produk.csv` dengan shortlink lama `amzn.to/4bIkXKB` dan `amzn.to/4fQJdN8`. Kalau
+Make.com masih merotasi 25 baris, dua produk yang sudah ditarik itu **masih ikut
+diposting**. Perlu diputuskan: hapus barisnya dari Sheet, atau kembalikan produknya ke
+situs.
+
+**3. Pertanyaan terbuka: apa yang dipakai Make.com sebagai tujuan pin?**
+Aturan yang sudah ditetapkan: **Pinterest tidak pernah link Amazon langsung — pin
+mengarah ke artikel, link Amazon ada di dalam artikel.** Berkas `pins-blog-batch-01.csv`
+mengikuti aturan itu (kolomnya `Destination Link` → URL artikel blog). Tapi `produk.csv`
+hanya punya kolom `Amazon Affiliate Link`.
+
+Kalau skenario Make.com memakai kolom itu sebagai tujuan pin, berarti 25 pin produk
+mengarah langsung ke Amazon — melanggar aturan sendiri dan berisiko di sisi Amazon
+Associates. **Buka skenario "Integration Pinterest" di Make.com dan periksa kolom mana
+yang dipetakan ke field "link" modul Pinterest** sebelum rotasi berikutnya jalan
+(Minggu 17:03 WIB).
