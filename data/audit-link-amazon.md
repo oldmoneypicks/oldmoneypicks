@@ -37,8 +37,8 @@ Skrip pengecek: `cek-asin.sh` (dibuat di folder sementara, tidak ikut disimpan d
 | 10 | Royce Leather Valet Tray | B00WKL39ZA | Royce Leather Men's Stylish Leather Valet Tray with 6 Compartments, Tan |
 | 11 | Nautica Voyage EDT | B000P22TIY | Nautica Voyage Eau de Toilette, Men's Fragrance, 3.3 fl oz |
 | 12 | CK One | B000E7WFX4 | Calvin Klein CK One Eau de Toilette – Citrus Unisex Fragrance |
-| 13 | Dior Sauvage | — | **link sengaja dicabut, kartu tanpa tombol** |
-| 14 | Creed Aventus Sample | — | **link sengaja dicabut, kartu tanpa tombol** |
+| 13 | ~~Dior Sauvage~~ → **Givenchy Gentleman Boisée EDP** | B0855L81LL | Givenchy Gentleman Boisee For Men Eau De Parfume Spray 3.4 Ounce |
+| 14 | ~~Creed Aventus~~ → **Versace Eros Parfum 6.7 oz** | B0BBR9LQV3 | Versace Eros by Versace for Men - 6.7 oz Parfum Spray |
 | 15 | Jo Malone Wood Sage & Sea Salt | B00VL1H4KQ | Jo Malone Wood Sage & Sea Salt Eau De Cologne Spray, 3.4 Oz |
 | 16 | Polo RL Oxford White | B0D15F8XZY | POLO RALPH LAUREN Men's Classic Fit Iconic Oxford Shirt, White |
 | 17 | Brooks Brothers Non-Iron Slim Fit | B074R5GC2V | Brooks Brothers Men's Regent Slim Fit Non Iron Oxford Button Down Shirt White ⚠️ |
@@ -115,3 +115,52 @@ mengarah langsung ke Amazon — melanggar aturan sendiri dan berisiko di sisi Am
 Associates. **Buka skenario "Integration Pinterest" di Make.com dan periksa kolom mana
 yang dipetakan ke field "link" modul Pinterest** sebelum rotasi berikutnya jalan
 (Minggu 17:03 WIB).
+
+---
+
+# Penggantian dua produk — 1 September 2026 (sore)
+
+Dior Sauvage dan Creed Aventus **diganti**, bukan sekadar dicabut. Pemilik memilih
+penggantinya lewat Google Sheet (baris 14 dan 15), lalu situs disesuaikan.
+
+| Posisi | Dulu | Sekarang | ASIN |
+|---|---|---|---|
+| 13 | Dior Sauvage Eau de Toilette | Givenchy Gentleman Boisée Eau de Parfum | `B0855L81LL` |
+| 14 | Creed Aventus — Sample Vial | Versace Eros Parfum — 6.7 oz | `B0BBR9LQV3` |
+
+**Versace terkonfirmasi ganda.** Judul di Sheet ("Versace Eros by Versace for Men - 6.7 oz
+Parfum Spray") sama persis dengan judul listing `B0BBR9LQV3`, dan foto produknya sendiri
+bertuliskan **PARFUM · 200 ML · 6.7 US FL.Oz** — cocok sampai ke variannya. Versace Eros
+punya versi EDT, EDP, dan Parfum; yang dipakai adalah Parfum.
+
+**Givenchy dipilih dengan satu asumsi.** Judul di Sheet tidak menyebut ukuran. Botol di
+foto bertuliskan 100 ML / 3.3 FL.OZ, dan `B0855L81LL` adalah listing 100 ml (ditulis
+"3.4 Ounce" oleh penjual — 100 ml memang dibulatkan 3,3 atau 3,4 tergantung listing).
+Ada listing 100 ml lain, `B0DZLMTH4Y`, yang menulisnya "3.3 Ounce". Kalau yang dimaksud
+justru listing itu, tinggal ganti ASIN-nya.
+
+## Yang ikut diperbarui selain link
+
+1. **Kartu HTML** — judul, gambar, tombol Shop Now (sebelumnya "Currently Unavailable"),
+   event GA4 `affiliate_click`, dan tombol Save to Pinterest.
+2. **JSON-LD data terstruktur** posisi 13 & 14 — nama, gambar, deskripsi, dan merek.
+   Ini gampang terlewat: kalau hanya kartunya diganti, data terstruktur untuk Google
+   masih menyebut Dior dan Creed sementara halamannya menampilkan Givenchy dan Versace.
+3. **`data/produk.csv`** dan ketiga CSV Sheet, dibuat ulang.
+
+## Foto produk
+
+Foto disediakan pemilik, aslinya persegi (Givenchy 1000×1000, Versace 1500×1500).
+Diubah ke **1000×1500 (2:3)** seperti semua foto lain dengan menambah ruang putih
+atas-bawah — bukan dipotong, supaya botolnya tetap utuh. Latar aslinya sudah putih,
+jadi sambungannya tidak terlihat.
+
+> ⚠️ **Perlu dipastikan asal fotonya.** Keduanya tampak seperti foto produk resmi yang
+> dipakai di listing Amazon. Perjanjian Amazon Associates mensyaratkan gambar produk
+> diambil lewat Product Advertising API, bukan diunduh dari halaman listing. Kalau foto
+> ini diunduh dari Amazon, sebaiknya diganti dengan foto dari situs resmi merek, foto
+> sendiri, atau lewat API. Foto produk lain di situs ini adalah foto stok umum, jadi
+> tidak terkena isu yang sama.
+
+Berkas lama `dior-sauvage.jpg` dan `creed-aventus-sample.jpg` dibiarkan di repo — tidak
+lagi dirujuk dari mana pun, aman untuk dihapus kapan saja.
