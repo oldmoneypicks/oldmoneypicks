@@ -42,9 +42,9 @@ Skrip pengecek: `cek-asin.sh` (dibuat di folder sementara, tidak ikut disimpan d
 | 15 | Jo Malone Wood Sage & Sea Salt | B00VL1H4KQ | Jo Malone Wood Sage & Sea Salt Eau De Cologne Spray, 3.4 Oz |
 | 16 | Polo RL Oxford White | B0D15F8XZY | POLO RALPH LAUREN Men's Classic Fit Iconic Oxford Shirt, White |
 | 17 | Brooks Brothers Non-Iron Slim Fit | B074R5GC2V | Brooks Brothers Men's Regent Slim Fit Non Iron Oxford Button Down Shirt White ⚠️ |
-| 18 | Linen Shirt — Cream | — | **BELUM DIPERBAIKI — perlu keputusan pemilik** |
+| 18 | ~~Linen Shirt — Cream~~ → **J.VER Linen Blend Shirt — White** | B0CFHLCPZP | J.VER Men's Long Sleeve Cotton Linen Button Down Shirts Casual Beach Wedding Shirt with Pocket White |
 | 19 | Cashmere V-Neck Navy | B00WSAYH9K | Citizen Cashmere Men's V-Neck Sweater 100% Cashmere, Navy Blue |
-| 20 | Uniqlo Linen Blazer — Beige | — | **BELUM DIPERBAIKI — Uniqlo tidak dijual di Amazon** |
+| 20 | ~~Uniqlo Linen Blazer — Beige~~ → **Perry Ellis Linen Blazer — Natural** | B0CNKXL8ZN | Perry Ellis Men's Linen-Blend Suit Jacket with Chest Pocket, Breathable & Lightweight, Regular Fit, Natural Linen Herringbone |
 | 21 | LAFCO Chamomile Lavender Candle | B002LK414S | LAFCO New York Signature Candle, Chamomile Lavender, 15.5 oz |
 | 22 | Waterford Lismore Tumbler | B000SMQ7JS | Waterford Lismore Tumbler |
 | 23 | Marble & Brass Bookends | B08NFHN5PQ | Cork & Mill Marble Bookends with Gold Brass, Grey and White, Set of 2 |
@@ -56,17 +56,44 @@ indeks pencarian Amazon, bukan dari membaca halamannya langsung — halaman itu 
 dibaca berulang kali (robot check). Sebaiknya dibuka sekali secara manual di
 `https://www.amazon.com/dp/B074R5GC2V` (tanpa tag) untuk memastikan.
 
-## Dua yang belum selesai
+## Dua kartu terakhir — SELESAI 1 September, 17.40
 
-**No. 18 — "Linen Shirt — Cream".** Judul kartunya tidak menyebut merek, jadi tidak ada
-satu produk "yang benar". Kandidat terdekat yang sudah diverifikasi ada:
-`B075CRJCLD` (Isle Bay Linens, 100% linen, long sleeve button-down) — tapi warna krem
-tidak bisa dipastikan dari judul halamannya. **Perlu pemilik memilih produknya.**
+Keduanya sudah diputuskan pemilik dan dikerjakan. Homepage kini **25 dari 25 link
+bentuk penuh, nol shortlink `amzn.to`.**
 
-**No. 20 — "Uniqlo Linen Blazer — Beige".** Uniqlo **tidak menjual produknya di Amazon.**
-Kartu ini tidak bisa diperbaiki apa adanya. Tiga pilihan: (a) ganti judul kartu ke blazer
-linen merek lain yang ada di Amazon, (b) hapus kartunya, (c) biarkan tanpa tombol seperti
-kartu 13 dan 14.
+### No. 18 — dulu "Linen Shirt — Cream", kini J.VER Linen Blend Shirt — White
+
+Judul lamanya tidak menyebut merek, jadi tidak ada satu produk "yang benar". Yang
+membuat keputusannya jelas: **fotonya sendiri menampilkan kemeja PUTIH, bukan krem** —
+jadi judul lamanya sudah salah sejak awal, terlepas dari urusan link.
+
+Kandidat lama `B075CRJCLD` (Isle Bay Linens) **ditolak.** Halamannya memang hidup, tapi
+foto listing-nya kemeja **ungu** — variasi warnanya tidak bisa dipastikan lewat URL,
+jadi tidak aman dipakai. Kandidat `B0DRP8C97G` (Isle Bay putih) juga ditolak: ASIN-nya
+mengembalikan **Page Not Found**, listing-nya sudah mati.
+
+`B0CFHLCPZP` dipilih karena cocok bertiga: putih, lengan panjang, ada saku dada —
+sama seperti foto kartunya. Satu catatan jujur: bahannya **campuran katun-linen**,
+bukan 100% linen. Karena itu judul kartunya ditulis "Linen Blend", bukan "Linen".
+
+Berkas foto diganti nama `linen-shirt-cream.jpg` → `linen-shirt-white.jpg`.
+
+### No. 20 — dulu "Uniqlo Linen Blazer — Beige", kini Perry Ellis Linen Blazer — Natural
+
+Uniqlo memang tidak menjual produknya di Amazon. Tapi saat mencari penggantinya,
+ketahuan hal yang lebih penting: **foto kartunya adalah foto listing resmi Perry Ellis
+`B0CNKXL8ZN`** — sama persis sampai ke rompi dan celana setelannya.
+
+Jadi kartu ini sebenarnya tidak pernah menampilkan produk Uniqlo. Ia menampilkan
+blazer Perry Ellis yang salah diberi nama. Memberi link ke `B0CNKXL8ZN` bukan mengganti
+produknya — itu **mengembalikan kartu ke produk yang fotonya memang dipakai.**
+
+Berkas foto diganti nama `uniqlo-linen-blazer.jpg` → `perry-ellis-linen-blazer.jpg`,
+dan nama Uniqlo dihapus dari judul kartu, blok JSON-LD, parameter GA4, serta keempat CSV.
+
+> ⚠️ **Konsekuensi untuk Google Sheet:** dua baris ini berubah di **tiga kolom**
+> sekaligus — Pin Title, Image URL, dan Amazon Affiliate Link. Menempel kolom link saja
+> tidak cukup untuk baris 19 dan 21; ketiganya harus diperbarui.
 
 ## Catatan terpisah: foto kartu tidak selalu menggambarkan produknya
 
