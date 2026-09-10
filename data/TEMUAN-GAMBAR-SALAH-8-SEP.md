@@ -48,3 +48,28 @@ sendiri" — penutupan akun tidak bisa dibanding.
 - [ ] Perbaiki artikel blog
 - [ ] Hapus/ganti pin Tissot yang sudah terbit
 - [ ] Cek board Timeless Watches — 13 pin, beberapa judul tampak muncul dua kali
+
+---
+
+## SELESAI — 10 September 2026
+
+Keempat foto **tidak diganti dengan foto lain**, melainkan dengan **kartu
+tipografi** buatan sendiri (`agent02-pinterest/buat-kartu-produk.py`).
+
+**Kenapa bukan cari foto pengganti:** PA-API Amazon adalah satu-satunya sumber
+foto produk yang halal dipakai penerbit Associates, dan baru terbuka sesudah
+3 penjualan. Mengunduh foto dari halaman Amazon atau dari Google melanggar
+syarat program dan/atau hak cipta pemiliknya. Gambar buatan sendiri adalah
+satu-satunya yang aman sampai PA-API terbuka.
+
+**Isi kartunya sengaja hanya keterangan yang sudah ada di dalam artikel** —
+tidak ada spesifikasi baru yang ditambahkan, supaya tidak mengulang kesalahan
+yang sama dalam bentuk lain.
+
+Yang diperbaiki dan sudah terbit:
+- `website/blog/quiet-luxury-watches-that-look-expensive/index.html` — 4 gambar + og:image + JSON-LD
+- `website/index.html` — 12 rujukan di beranda
+- `website/blog/index.html` — kartu artikel di index The Journal
+
+Berkas `.jpg` yang salah **tidak dihapus** tapi **tidak lagi dirujuk dari halaman
+mana pun** (diverifikasi dengan grep, hasilnya nol). Jangan dipakai lagi.
