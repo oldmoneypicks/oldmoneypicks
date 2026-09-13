@@ -1,0 +1,17 @@
+[
+ {"slug":"polo-ralph-lauren-oxford","kick":"The uniform","merek":"Polo Ralph Lauren","model":"Oxford Shirt",
+  "spek":[["Collar roll","what separates good from cheap"],["Under a blazer","or alone, sleeves rolled"],["White first","colour later, if ever"]],
+  "tag":"Quiet Luxury · Fashion"},
+ {"slug":"brooks-brothers-non-iron","kick":"The one for the week","merek":"Brooks Brothers","model":"Non-Iron Slim Fit",
+  "spek":[["Five mornings","no ironing board"],["Slim fit","cut close, not tight"],["Office-safe","and travel-safe"]],
+  "tag":"Quiet Luxury · Fashion"},
+ {"slug":"linen-shirt-white","kick":"The warm-weather default","merek":"J.VER","model":"Linen Blend Shirt",
+  "spek":[["Linen blend","creases on purpose"],["White","reads cool, not casual"],["Untucked","the only correct way"]],
+  "tag":"Quiet Luxury · Fashion"},
+ {"slug":"cashmere-v-neck-sweater","kick":"The layer that does the work","merek":"Cashmere","model":"V-Neck — Navy",
+  "spek":[["Navy","the quietest colour there is"],["Over a collar","shirt showing at the neck"],["Cashmere","ages, not wears out"]],
+  "tag":"Quiet Luxury · Fashion"},
+ {"slug":"perry-ellis-linen-blazer","kick":"The finishing piece","merek":"Perry Ellis","model":"Linen Blazer — Natural",
+  "spek":[["Unstructured","no armour in the shoulder"],["Natural linen","warmer than grey, quieter than blue"],["Half the outfit","carried by one layer"]],
+  "tag":"Quiet Luxury · Fashion"}
+]
