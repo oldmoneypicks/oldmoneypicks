@@ -1,0 +1,6 @@
+[
+ {"slug":"lafco-candle","foto":"lafco.jpg","merek":"LAFCO New York","model":"Chamomile Lavender","fakta":["15.5 oz candle","Hand-blown glass","Chamomile, lavender & sage"]},
+ {"slug":"tissot-prx-powermatic-80","foto":"tissot.png","merek":"Tissot","model":"PRX Powermatic 80","fakta":["40 mm, ice blue dial","80-hour power reserve","Swiss made"]},
+ {"slug":"timex-marlin","foto":"timex.png","merek":"Timex","model":"Marlin Hand-Wound","fakta":["34 mm","1960s reissue","Domed acrylic crystal"]},
+ {"slug":"diptyque-baies-candle","foto":"diptyque.jpg","merek":"Diptyque Paris","model":"Baies Scented Oval","fakta":["Blackcurrant & rose","No flame, no plug","Scents for 3+ months"]}
+]
