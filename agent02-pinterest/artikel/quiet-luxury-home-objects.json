@@ -1,0 +1,42 @@
+{
+ "slug": "quiet-luxury-home-objects",
+ "eyebrow": "Elegant Living",
+ "title": "4 Objects That Make a Room Read as Old Money",
+ "description": "A room reads as old money when it is accumulated, not decorated. Four lasting objects: Waterford Lismore crystal, a pure cashmere throw, a LAFCO hand-blown glass candle and marble-and-brass bookends.",
+ "date": "10 September 2026",
+ "modified": "2026-09-28",
+ "minutes": 3,
+ "intro": [
+  "A room that reads as old money is rarely decorated. It is accumulated: a few good objects that arrived at different times and were never replaced.",
+  "Each object below is useful before it is decorative, and heavy enough in the hand to feel like it will last. Start with one."
+ ],
+ "picks": [
+  {"name": "Waterford Lismore Double Old Fashioned, Set of 2", "kicker": "Weight you can feel from across the table",
+   "img": "waterford-lismore-dof-pair-card.png", "alt": "Pair of Waterford Lismore cut crystal double old fashioned glasses",
+   "paras": ["A pair of Lismore glasses on a sideboard does more for a room than any new piece of furniture. The deep diamond and wedge cuts throw light across the table every evening.",
+             "<strong>The fact your guests will not know:</strong> the Lismore pattern was created in 1952 by designer Miroslav Havel as a tribute to Ireland's 800-year-old Lismore Castle — and Waterford has kept it unchanged ever since."],
+   "asin": "B09MWLSK5J", "brand": "Waterford", "category": "Elegant Living",
+   "verdict": "a bar cart, a sideboard, or a whisky poured at the end of the week."},
+  {"name": "State Cashmere Fringe Throw, Camel", "kicker": "The softest thing in the room",
+   "img": "state-cashmere-throw-camel-card.png", "alt": "State Cashmere 100% cashmere throw with fringe, camel, 60 by 50 inches, folded",
+   "paras": ["Folded over the arm of a sofa, a camel cashmere throw makes the room look finished. At 60 by 50 inches it is large enough to actually use on a cold evening.",
+             "<strong>Why it feels different:</strong> it is 100% Grade A cashmere from Inner Mongolia — warmth without weight, from goats that grow their finest undercoat to survive harsh winters."],
+   "asin": "B076J5DJ5K", "brand": "State Cashmere", "category": "Elegant Living",
+   "verdict": "a sofa, a reading chair, or the foot of a bed."},
+  {"name": "LAFCO New York Chamomile Lavender Candle", "kicker": "A scent for the room, a vessel for life",
+   "img": "lafco-chamomile-lavender-card.png", "alt": "LAFCO New York Signature candle, Chamomile Lavender, 15.5 oz in hand-blown glass",
+   "paras": ["Chamomile, lavender and sage make this the calmest scent in LAFCO's range — the one for a bedroom or a reading corner. The 15.5 oz candle burns for about 90 hours.",
+             "<strong>The detail that makes it worth owning:</strong> each vessel is hand-blown glass, and the candle is made in the USA. When the wax is gone, the glass stays on the shelf for pens, brushes or flowers."],
+   "asin": "B002LK414S", "brand": "LAFCO New York", "category": "Elegant Living",
+   "verdict": "a bedroom, a guest room, or anyone who says they do not like scented candles."},
+  {"name": "Cork & Mill Marble & Brass Bookends, Set of 2", "kicker": "The cheapest way to make a shelf look considered",
+   "img": "marble-brass-bookends-card.png", "alt": "Cork & Mill grey and white marble bookends with gold brass inlay, set of two",
+   "paras": ["Bookends are what stop a shelf of books from looking like storage. Solid grey-and-white marble with a brass inlay reads as permanent — cold, heavy and without a trend attached.",
+             "<strong>Why no two sets are alike:</strong> they are cut from natural marble, so the veining on your pair is yours alone. Together they weigh about nine pounds, with a non-skid base that holds heavy books in place."],
+   "asin": "B08NFHN5PQ", "brand": "Cork & Mill", "category": "Elegant Living",
+   "verdict": "a bookshelf, a desk, or a first home with a first real library."}
+ ],
+ "closing": [
+  "<strong>Buy one object a season, not a room in an afternoon.</strong> A matched set announces the day it was bought; a room built slowly never looks dated."
+ ]
+}

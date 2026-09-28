@@ -7,3 +7,6 @@
 | diptyque.jpg | diptyqueparis.com/en_us/p/baie-berrie-scented-oval.html | B004RVBSKE | ✓ judul Amazon; ⚠ foto utama listing Amazon memperlihatkan lilin Mimosa |
 | casio.png | casio.com/us/watches/casio/product.A168WG-9 (disimpan Pak manual, situs blokir bot) | B01M09CT2Q | ✓ A168WG-9 gold |
 | givenchy.png | givenchybeauty.com/us/p/gentleman-boisee-F10100127.html (disimpan Pak manual) | B0855L81LL | ✓ Gentleman Boisée EDP, foto suasana resmi |
+| state-throw-camel.jpg | statecashmere.com/products/the-solid-fringe-throw-blanket (varian Camel) | B076J5DJ5K | ✓ Camel 60x50 |
+| state-vneck-navy-still.jpg | statecashmere.com/products/the-v-neck-basic-sweater (Navy) | B0742PWZP4 | ✓ Navy |
+| waterford.jpg | waterford.com …/lismore-12oz-double-old-fashioned-set-of-2-1058536 | B09MWLSK5J | ✓ Lismore DOF set of 2 (Amazon 10.5 oz; foto pola sama) |
