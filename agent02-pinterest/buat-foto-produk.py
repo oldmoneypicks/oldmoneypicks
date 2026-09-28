@@ -18,7 +18,7 @@ SANS = "/System/Library/Fonts/Supplemental/Arial.ttf"
 BG, INK, GOLD, GREY = (250, 248, 244), (28, 28, 28), (150, 118, 40), (95, 95, 95)
 
 
-def buka(p):
+def buka(p, pangkas=True):
     im = Image.open(AKAR / "foto-resmi" / p)
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA"); bg = Image.new("RGB", im.size, (255, 255, 255))
@@ -26,6 +26,8 @@ def buka(p):
     im = im.convert("RGB")
     # pangkas latar putih/abu terang di sekeliling barang
     diff = ImageChops.difference(im, Image.new("RGB", im.size, im.getpixel((2, 2))))
+    if not pangkas:
+        return im
     bb = diff.convert("L").point(lambda v: 255 if v > 18 else 0).getbbox()
     if bb:
         m = 20; bb = (max(0, bb[0]-m), max(0, bb[1]-m), min(im.width, bb[2]+m), min(im.height, bb[3]+m))
@@ -33,8 +35,13 @@ def buka(p):
     return im
 
 
-def pas(kanvas, im, box):
+def pas(kanvas, im, box, penuh=False):
     x0, y0, x1, y1 = box
+    if penuh:                                   # foto suasana: isi penuh kotak (crop tengah)
+        s = max((x1-x0)/im.width, (y1-y0)/im.height)
+        im = im.resize((int(im.width*s)+1, int(im.height*s)+1), Image.LANCZOS)
+        l, a = (im.width-(x1-x0))//2, (im.height-(y1-y0))//2
+        kanvas.paste(im.crop((l, a, l+x1-x0, a+y1-y0)), (x0, y0)); return
     im = im.copy(); s = min((x1-x0)/im.width, (y1-y0)/im.height); im = im.resize((int(im.width*s), int(im.height*s)), Image.LANCZOS)
     # latar putih foto dilebur ke kartu putih bersih
     kotak = Image.new("RGB", (x1-x0, y1-y0), (255, 255, 255))
@@ -49,7 +56,9 @@ def tengah(d, y, s, f, isi, w):
 def potret(p):
     k = Image.new("RGB", (1000, 1500), BG); d = ImageDraw.Draw(k)
     d.rectangle((40, 40, 960, 1110), fill=(255, 255, 255))
-    pas(k, buka(p["foto"]), (90, 90, 910, 1060))
+    pn = p.get("penuh", False)
+    if pn: pas(k, buka(p["foto"], False), (40, 40, 960, 1110), True)
+    else: pas(k, buka(p["foto"]), (90, 90, 910, 1060))
     tengah(d, 1150, p["merek"].upper(), ImageFont.truetype(SANS, 28), GOLD, 1000)
     tengah(d, 1195, p["model"], ImageFont.truetype(SERIF, 64), INK, 1000)
     tengah(d, 1300, "  ·  ".join(p["fakta"]), ImageFont.truetype(SANS, 27), GREY, 1000)
@@ -60,7 +69,8 @@ def potret(p):
 def lanskap(p):
     k = Image.new("RGB", (1400, 640), BG); d = ImageDraw.Draw(k)
     d.rectangle((0, 0, 700, 640), fill=(255, 255, 255))
-    pas(k, buka(p["foto"]), (40, 30, 660, 610))
+    if p.get("penuh"): pas(k, buka(p["foto"], False), (0, 0, 700, 640), True)
+    else: pas(k, buka(p["foto"]), (40, 30, 660, 610))
     d.text((760, 150), p["merek"].upper(), font=ImageFont.truetype(SANS, 26), fill=GOLD)
     d.text((760, 190), p["model"], font=ImageFont.truetype(SERIF, 56), fill=INK)
     y = 300

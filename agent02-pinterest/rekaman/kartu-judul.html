@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Title cards</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; height:100vh; display:flex; align-items:center; justify-content:center;
+         background:#12100c; color:#f2ede3; font:400 42px/1.35 Georgia,"Times New Roman",serif;
+         text-align:center; padding:0 8vw; cursor:none; }
+  .bungkus { max-width:20em; }
+  .no { display:block; font:600 15px/1 -apple-system,system-ui,sans-serif; letter-spacing:.32em;
+        text-transform:uppercase; color:#b9a26a; margin-bottom:1.6em; }
+  .petunjuk { position:fixed; bottom:18px; right:22px; font:13px -apple-system,system-ui,sans-serif;
+              color:#4a453c; letter-spacing:.05em; }
+</style>
+<div class="bungkus">
+  <span class="no" id="no"></span>
+  <div id="teks"></div>
+</div>
+<div class="petunjuk" id="petunjuk">→ berikutnya · ← kembali · H sembunyikan petunjuk</div>
+<script>
+  const kartu = [
+    ["Scene 1", "This is our site, oldmoneypicks.com.<br>The privacy policy is linked in the footer."],
+    ["Scene 2", "Our Pinterest app, with the redirect URI<br>registered in the developer portal."],
+    ["Scene 3", "The full OAuth flow: consent, redirect to our<br>local callback, code exchanged for a token.<br>The token itself is never displayed."],
+    ["Scene 4", "Three live API calls:<br>user account, boards, and pins on a board."],
+    ["Scene 5", "Pin creation works — but production is closed<br>to Trial apps. That is what we are requesting<br>Standard access for. We publish our own guides<br>to our own boards. No third-party posting."],
+    ["Thank you", "The Old Money Picks<br>oldmoneypicks.com"]
+  ];
+  let i = 0;
+  const elNo = document.getElementById("no"), elTeks = document.getElementById("teks"),
+        elPetunjuk = document.getElementById("petunjuk");
+  function gambar() { elNo.textContent = kartu[i][0]; elTeks.innerHTML = kartu[i][1]; }
+  addEventListener("keydown", e => {
+    if (e.key === "ArrowRight" || e.key === " ") { i = Math.min(i + 1, kartu.length - 1); gambar(); }
+    if (e.key === "ArrowLeft") { i = Math.max(i - 1, 0); gambar(); }
+    if (e.key.toLowerCase() === "h") { elPetunjuk.hidden = !elPetunjuk.hidden; }
+  });
+  gambar();
+</script>

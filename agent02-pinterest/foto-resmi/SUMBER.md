@@ -5,3 +5,5 @@
 | tissot.png | tissotwatches.com/en-us/T1374071135100.html | B0CDP157F4 | ✓ PRX 40 mm ice blue T137.407.11.351.00 |
 | timex.png | timex.com/products/marlin-1965-reissue-hand-wound-34mm-leather-strap-watch-tw2r47900 | B08K2GT7GB | ✓ TW2R47900 silver dial, black strap (sama dengan foto utama Amazon) |
 | diptyque.jpg | diptyqueparis.com/en_us/p/baie-berrie-scented-oval.html | B004RVBSKE | ✓ judul Amazon; ⚠ foto utama listing Amazon memperlihatkan lilin Mimosa |
+| casio.png | casio.com/us/watches/casio/product.A168WG-9 (disimpan Pak manual, situs blokir bot) | B01M09CT2Q | ✓ A168WG-9 gold |
+| givenchy.png | givenchybeauty.com/us/p/gentleman-boisee-F10100127.html (disimpan Pak manual) | B0855L81LL | ✓ Gentleman Boisée EDP, foto suasana resmi |
