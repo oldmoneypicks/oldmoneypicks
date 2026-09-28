@@ -10,3 +10,5 @@
 | state-throw-camel.jpg | statecashmere.com/products/the-solid-fringe-throw-blanket (varian Camel) | B076J5DJ5K | ✓ Camel 60x50 |
 | state-vneck-navy-still.jpg | statecashmere.com/products/the-v-neck-basic-sweater (Navy) | B0742PWZP4 | ✓ Navy |
 | waterford.jpg | waterford.com …/lismore-12oz-double-old-fashioned-set-of-2-1058536 | B09MWLSK5J | ✓ Lismore DOF set of 2 (Amazon 10.5 oz; foto pola sama) |
+| bellroy-hide-seek.jpg | bellroy.com/products/hide-and-seek-premium (WHSG-BLK) | B08L3NZ621 | ✓ black, sama dengan foto Amazon |
+| bellroy-card-sleeve.jpg | bellroy.com/products/card-sleeve (WCSC-BLK) | B0CSYLRX49 | ✓ black |

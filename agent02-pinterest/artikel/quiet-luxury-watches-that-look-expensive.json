@@ -1,0 +1,36 @@
+{
+ "slug": "quiet-luxury-watches-that-look-expensive",
+ "eyebrow": "Timeless Watches",
+ "title": "3 Quiet Luxury Watches That Look Far More Expensive",
+ "description": "Three watches with real history and no logo shouting: the Swiss Tissot PRX Powermatic 80, the hand-wound Timex Marlin 1960s reissue and the award-winning gold Casio A168.",
+ "date": "27 August 2026",
+ "modified": "2026-09-28",
+ "minutes": 3,
+ "intro": [
+  "A quiet luxury watch is not the one with the biggest logo. It is the one with a real story behind it — a design that has survived decades without needing to change.",
+  "Here are three, from Swiss automatic to a digital icon. Each one starts a conversation among people who know watches, and says nothing to people who do not."
+ ],
+ "picks": [
+  {"name": "Tissot PRX Powermatic 80, Ice Blue", "kicker": "Swiss automatic, 1970s shape",
+   "img": "tissot-prx-powermatic-80-card.png", "alt": "Tissot PRX Powermatic 80, 40 mm, ice blue waffle dial on an integrated steel bracelet",
+   "paras": ["The PRX brings back a Tissot case first made in 1978: flat, with an integrated steel bracelet and a waffle-textured ice blue dial. Inside, the Powermatic 80 automatic movement keeps running for about 80 hours — take it off on Friday and it is still ticking on Monday.",
+             "<strong>The detail worth knowing:</strong> P and R stand for Precise and Robust, and the X is the Roman numeral ten — for 10 bar, or 100 metres, of water resistance."],
+   "asin": "B0CDP157F4", "brand": "Tissot", "category": "Timeless Watches",
+   "verdict": "the one serious watch — for work, weekends and handing down."},
+  {"name": "Timex Marlin Hand-Wound, 1960s Reissue", "kicker": "A small morning ritual on your wrist",
+   "img": "timex-marlin-card.png", "alt": "Timex Marlin hand-wound 34 mm watch, silver dial, black leather strap",
+   "paras": ["The Marlin is a faithful reissue of Timex's own 1960s dress watch: 34 mm, a domed crystal and a silver dial with elegant numerals. It has no battery and no rotor — you wind the crown by hand, and a full wind gives about 40 hours.",
+             "<strong>Why owners love it:</strong> winding it each morning, at the same time, becomes a quiet ritual. It is as close to a genuine vintage dress watch as you can get without inheriting one."],
+   "asin": "B08K2GT7GB", "brand": "Timex", "category": "Timeless Watches",
+   "verdict": "tailoring, weddings and anyone who wants a real mechanical watch."},
+  {"name": "Casio A168WG-9 Vintage Gold", "kicker": "The flex of a man with nothing to prove",
+   "img": "casio-a168wg-9-card.png", "alt": "Casio A168WG-9 digital watch in gold-tone stainless steel",
+   "paras": ["A gold Casio worn with a good jacket is pure confidence — it says you care about style but have nothing left to prove. It has a light, alarm and stopwatch, and the battery lasts about seven years.",
+             "<strong>The fact that surprises people:</strong> the A168 design first appeared in the late 1980s and won Japan's Good Design Long Life Design Award in 2011 — a prize for designs that stay relevant for decades."],
+   "asin": "B01M09CT2Q", "brand": "Casio", "category": "Timeless Watches",
+   "verdict": "a weekend watch, a gift under $100, or a second watch beside a serious one."}
+ ],
+ "closing": [
+  "<strong>Start with one, wear it every day.</strong> A watch looks expensive when it looks lived-in and chosen — not when it is new."
+ ]
+}

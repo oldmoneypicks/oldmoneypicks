@@ -1,0 +1,36 @@
+{
+ "slug": "quiet-luxury-leather-goods",
+ "eyebrow": "Quiet Luxury Leather",
+ "title": "3 Leather Pieces That Get Better the Longer You Own Them",
+ "description": "Three leather pieces for everyday quiet luxury: the Bellroy Hide & Seek Premium billfold, the Bellroy Card Sleeve and a handmade Hide & Drink full-grain leather watch roll.",
+ "date": "13 September 2026",
+ "modified": "2026-09-28",
+ "minutes": 3,
+ "intro": [
+  "Good leather is one of the few things that looks better at year five than on the day you bought it. It softens, darkens and takes the shape of the way you use it.",
+  "These three are small, used every day, and chosen for the leather first and the logo last."
+ ],
+ "picks": [
+  {"name": "Bellroy Hide & Seek Premium Edition", "kicker": "The slim billfold with a secret",
+   "img": "bellroy-hide-seek-premium-card.png", "alt": "Bellroy Hide & Seek Premium Edition slim leather billfold in black",
+   "paras": ["Four quick-access slots hold the cards you use most, and a flat section behind them keeps extra cards without the bulk. At 115 by 85 mm it slips into a front trouser pocket.",
+             "<strong>The detail only you will know about:</strong> a hidden section at the back keeps large bills and a coin pouch out of sight. The Premium Edition uses exclusively sourced leather and contrast stitching — refinement you feel before you see it."],
+   "asin": "B08L3NZ621", "brand": "Bellroy", "category": "Quiet Luxury Leather",
+   "verdict": "the man whose wallet is too thick to sit on comfortably."},
+  {"name": "Bellroy Card Sleeve", "kicker": "Everything you need, nothing you do not",
+   "img": "bellroy-card-sleeve-card.png", "alt": "Bellroy Card Sleeve leather card holder in black",
+   "paras": ["The Card Sleeve holds two to eight cards and a few folded bills in a piece of leather just 7 mm thick. Two quick-draw slots sit on the outside; a pull tab brings up the rest.",
+             "<strong>Why it feels special:</strong> it is nothing but leather and stitching — no bulky linings. Bellroy sources its leather from tanneries rated gold by the Leather Working Group."],
+   "asin": "B0CSYLRX49", "brand": "Bellroy", "category": "Quiet Luxury Leather",
+   "verdict": "evenings out, travel, or a second wallet for the essentials."},
+  {"name": "Hide & Drink Leather Watch Roll", "kicker": "How watches should travel",
+   "img": "hide-and-drink-watch-roll-card.png", "alt": "Hide & Drink full-grain leather watch roll for up to four watches",
+   "paras": ["A watch roll keeps up to four watches from knocking together in a bag, packs flat into a case, and does not announce what is inside — the safer signal when travelling.",
+             "<strong>The quiet pleasure of owning one:</strong> it is handmade from full-grain leather, which darkens and softens with use. Watches that live in a roll get worn in rotation; watches in a drawer get worn once a year."],
+   "asin": "B07L15L48X", "brand": "Hide & Drink", "category": "Quiet Luxury Leather",
+   "verdict": "anyone who owns two or more watches and travels with them."}
+ ],
+ "closing": [
+  "<strong>Buy the leather, not the logo.</strong> A small piece used every day will earn its price many times over."
+ ]
+}
