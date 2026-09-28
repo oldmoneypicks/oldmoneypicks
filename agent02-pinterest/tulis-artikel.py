@@ -59,6 +59,8 @@ def main(spec_path):
     t = re.sub(r'("description": ")[^"]*(")', lambda m: m.group(1) + s["description"].replace('"', "'") + m.group(2), t, count=1)
     t = re.sub(r'("image": ")[^"]*(")', lambda m: m.group(1) + IMG + s["picks"][0]["img"] + m.group(2), t, count=1)
     t = re.sub(r'("dateModified": ")[^"]*(")', lambda m: m.group(1) + s["modified"] + m.group(2), t, count=1)
+    for k in ("og:image", "twitter:image"):
+        t = re.sub(rf'(<meta (?:property|name)="{k}" content=")[^"]*(")', lambda m: m.group(1) + IMG + s["picks"][0]["img"] + m.group(2), t)
     for k in ("og:title", "twitter:title"):
         t = re.sub(rf'(<meta (?:property|name)="{k}" content=")[^"]*(")', lambda m: m.group(1) + e(s["title"]) + m.group(2), t)
     for k in ("og:description", "twitter:description"):

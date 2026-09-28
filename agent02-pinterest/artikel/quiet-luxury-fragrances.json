@@ -1,0 +1,47 @@
+{
+ "slug": "quiet-luxury-fragrances",
+ "eyebrow": "Signature Scents",
+ "title": "2 Quiet Luxury Fragrances That Announce Nothing",
+ "description": "Two fragrances noticed at arm's length, not across a room: Acqua di Parma Colonia Pura for the day and Givenchy Gentleman Boisée for the evening.",
+ "date": "10 September 2026",
+ "modified": "2026-09-28",
+ "minutes": 3,
+ "intro": [
+  "An old money fragrance is noticed only by the person standing close to you. It never arrives in the room before you do.",
+  "These two cover the whole week — a clean Italian cologne for the day and a warm, woody one for the evening."
+ ],
+ "picks": [
+  {
+   "name": "Acqua di Parma Colonia Pura Eau de Cologne",
+   "kicker": "Italian freshness in a century-old tradition",
+   "img": "acqua-di-parma-colonia-pura-card.png",
+   "alt": "Acqua di Parma Colonia Pura eau de cologne, 3.4 oz bottle beside its yellow box",
+   "paras": [
+    "Colonia Pura opens with bergamot, jasmine sambac and petitgrain, with narcissus at the heart and a soft base of musk, patchouli and cedarwood. It is fresh and clean from morning to evening, and never loud.",
+    "<strong>The story you will enjoy telling:</strong> Acqua di Parma was founded in Parma, Italy, in 1916. Its yellow box is recognised by anyone who knows fragrance — and Colonia Pura joined its famous Colonia family in 2017.",
+    "<em>Note: the Amazon listing may show Acqua di Parma's earlier grey-label packaging. The fragrance inside is the same Colonia Pura.</em>"
+   ],
+   "asin": "B075FBV892",
+   "brand": "Acqua di Parma",
+   "category": "Signature Scents",
+   "verdict": "the office, warm days, and the man who wants one timeless daytime scent."
+  },
+  {
+   "name": "Givenchy Gentleman Boisée Eau de Parfum",
+   "kicker": "The evening one",
+   "img": "givenchy-gentleman-boisee-card.png",
+   "alt": "Givenchy Gentleman Boisée eau de parfum, 3.4 oz bottle",
+   "paras": [
+    "Gentleman Boisée opens with black pepper, settles into iris and cocoa, and finishes on sandalwood and patchouli. Warm and woody rather than sweet, it belongs at dinner rather than the desk.",
+    "<strong>What makes it special:</strong> Givenchy makes it in France, in its own ateliers, and one of its base notes is patchouli from Indonesia."
+   ],
+   "asin": "B0855L81LL",
+   "brand": "Givenchy",
+   "category": "Signature Scents",
+   "verdict": "dinners, evenings out, and the colder months."
+  }
+ ],
+ "closing": [
+  "<strong>Apply less than you think.</strong> Two sprays on the skin, never on clothes. If someone can smell you from across the room, it is too much."
+ ]
+}
